@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="conteiner">
+        
+        <div class="item">
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="img/01.jpg"></div>
+                  <div class="swiper-slide"><img src="img/02.jpg"></div>
+                  <div class="swiper-slide"><img src="img/03.jpg"></div>
+                  <div class="swiper-slide"><img src="img/04.jpg"></div>
+                  <div class="swiper-slide"><img src="img/05.jpg"></div>
+                </div>
+                
+              </div>
+
+        </div>
+
+    </div>
+
+    <div class="aTr">
+        <h2>Sistema de Gestão</h2>
+        <button onclick="entra()">ENTRAR</button>
+        <p>Este sistema esta em construção, por esse motivo muitos erros podem ser encontrados.</p>
+    </div>
+
+    <div class="telaUm" id="telaUm">
+
+        <div class="telaDois">
+
+            <div class="fFecha">
+                <a href="#" onclick="fFechaTela()"><strong>X</strong></a>
+            </div>
+
+            <form>
+
+                <div class="telaTres">
+                    <img src="icones/trancar.png" alt="">
+                    <h2>Faça seu acesso</h2>
+    
+                    <div class="assUser">
+                        <label>Usuario</label><br>
+                        <input type="text">
+                    </div>
+    
+                    <div class="assUser">
+                        <label>Senha</label><br>
+                        <input type="password">
+                    </div> <br>
+    
+                    <button type="submit">ACESSAR</button>
+    
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="funcao/app.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 40,
+          centeredSlides: true,
+          autoplay: {
+            delay: 4500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+</body>
+</html>
