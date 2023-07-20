@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(180deg, #ffffff, #1f263328);
+    background-attachment: fixed;
+}
+
+.areaum{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.areadois{
+    margin: auto;
+    border: 1px solid #444444;
+    width: 300px;
+    height: 380px;
+    border-radius: 7px;
+    background: #ffffff;
+    box-shadow: 6px 6px 1px #1f263328;
+}
+
+.areadois h2{
+    text-align: center;
+    background: #4774e6;
+    color: #ffffff;
+    padding: 20px;
+    margin: 0;
+}
+
+.areatres{
+    border: 1px solid rgba(0, 0, 0, 0);
+    background: #ffffff;
+}
+
+.areatres p{
+    margin: 10px;
+    margin-bottom: -8px;
+    font-size: 15pt;
+}
+
+.areatres input{
+    width: 95%;
+    border: 1px solid #ffffff;
+    outline: 0;
+    font-size: 15pt;
+}
+
+.areatres > div{
+    border: 1px solid #444444;
+    margin: 10px;
+    border-radius: 7px;
+    padding: 2px;
+}
+
+.areatres button{
+    background: #4774e6;
+    color: #ffffff;
+    margin: auto;
+    font-size: 12pt;
+    border-radius: 7px;
+    border: none;
+    width: 100%;
+    padding: 10px;
+}
+
+.btnT{
+    display: flex;
+    padding: 12px;
+    height: 100%;
+    border: nonee;
+}
+
+#btnG{
+    margin-top: 20px;
+    border: 1px solid rgba(255, 0, 0, 0);
+}
+
+.arealink{
+    text-align: center;
+    border: 1px solid rgba(255, 0, 0, 0);
+}
+
+#arealinkg{
+    border: 1px solid rgba(255, 0, 0, 0);
+}
+
+.areatres a{
+   color: #4774e6;
+   text-decoration: none;
+}
+
+/* popup */
+
+.caixa{
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.caixadois{
+    background: #ffffff;
+    width: 100%;
+    max-width: 300px;
+    margin: 20% auto;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    border: 1px solid #44444450;
+}
+
+.caixatres h3{
+    text-align: center;
+    margin-top: -5px;
+    color: #444444;
+}
+
+.caixatres img{
+    width: 40px;
+}
+
+.caixatres{
+    text-align: center;
+}
+
+.caixatres p{
+    font-size: 10pt;
+    text-align: left;
+    color: #444444;
+}
+
+.btnT > button{
+    background: #4774e6;
+    border: 1px solid #4774e6;
+    font-size: 12pt;
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 5px;
+    width: 100%;
+    cursor: pointer;
+}
