@@ -1,96 +1,65 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <title>Document</title>
 </head>
-
-
-
 <body>
-    <div class="conteiner">
-        
-        <div class="item">
+    
+    <div class="areaum">
 
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide"><img src="img/01.jpg"></div>
-                  <div class="swiper-slide"><img src="img/02.jpg"></div>
-                  <div class="swiper-slide"><img src="img/03.jpg"></div>
-                  <div class="swiper-slide"><img src="img/04.jpg"></div>
-                  <div class="swiper-slide"><img src="img/05.jpg"></div>
+        <div class="areadois">
+            <h2>Login</h2>
+            <div class="areatres"> <br>
+
+                <p>Usuario</p>
+                <div> 
+                    <input type="text" name="tUser" id="tUser">
+                </div> 
+
+                <p>Senha</p>
+                <div>
+                    <input type="password" name="tSenha" id="tSenha">
+                </div> 
+
+                <div class="btnT" id="btnG">
+                    <button>Entrar</button>
+                </div> 
+
+                <div class="arealink" id="arealinkg">
+                    <a href="#">Solicitar acesso</a>
                 </div>
-                
-              </div>
-
+            </div>
         </div>
 
     </div>
 
-    <div class="aTr">
-        <h2>Sistema de Gestão</h2>
-        <button onclick="entra()">ENTRAR</button>
-        <p>Este sistema esta em construção, por esse motivo muitos erros podem ser encontrados.</p>
-        <a href="Menu.html">Pular autenticação</a>
-    </div>
+    <div class="caixa" id="caixa">
 
-    <div class="telaUm" id="telaUm">
+        <div class="caixadois">
 
-        <div class="telaDois">
+            <div class="caixatres">
 
-            <div class="fFecha">
-                <a href="#" onclick="fFechaTela()"><strong>X</strong></a>
+                <img src="img/documento (1).png" alt="">
+
+                <h3>Informação</h3>
+
+                <p>
+                    Este site encontra-se em desenvolvimento, ele sera o aplicativo WEB que fara a substituição das planilhas de gestão, estamos trabalhando dia e noite para disponibilizar uma versão estável o mais breve possível.
+                </p>
+
             </div>
 
-            <form>
-
-                <div class="telaTres">
-                    <img src="icones/trancar.png" alt="">
-                    <h2>Faça seu acesso</h2>
-    
-                    <div class="assUser">
-                        <label>Usuario</label><br>
-                        <input type="text">
-                    </div>
-    
-                    <div class="assUser">
-                        <label>Senha</label><br>
-                        <input type="password">
-                    </div> <br>
-    
-                    <button type="submit">ACESSAR</button>
-    
-                </div>
-
-            </form>
+            <div class="btnT" id="btnG">
+                <button onclick="Fecha()">Fechar</button>
+            </div> 
 
         </div>
 
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="funcao/app.js"></script>
-
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-          spaceBetween: 40,
-          centeredSlides: true,
-          autoplay: {
-            delay: 4500,
-            disableOnInteraction: false,
-          },
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-        });
-      </script>
+    <script src="app.js"></script>
 </body>
 </html>

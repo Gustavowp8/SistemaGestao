@@ -1,216 +1,150 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 body{
-    background-image: linear-gradient(180deg, #ffffff, #7229d99c);
-    background-attachment: fixed;
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(180deg, #ffffff, #1f263328);
+    background-attachment: fixed;
 }
 
-
-.flex{
-    max-width: 800px;
-    margin: 0 auto;
+.areaum{
     display: flex;
-    flex-wrap: wrap;
-}
-
-.flex > div{
-    background: #159A9C;
-    flex: 1 0 150px;
-    text-align: center;
-    margin: 10px;
-    padding: 5px;
-    border-radius: 4px;
-}
-
-.flex > div img{
-    margin-bottom: 2px;
-}
-
-.flex > div a{
-    background: #002333;
-    padding: 3px;
-    margin: 5px;
-    border-radius: 4px;
-    text-decoration: none;
-    color: #FFFFFF;
-}
-
-/*tttttttttttttttttttttttttt*/
-
-.conteiner{
-display: flex;
-justify-content: center;
-align-items: center;
-margin: auto;
-height: 100vh;
-}
-
-.item{
-    width: 80vh;
-    height: 80vh;
-    border-radius: 4px;
-    padding: 10px;
-    margin: 15px;
-}
-
-/*3333333*/
-
-.swiper {
     width: 100%;
-    height: 100%;
-    border-radius: 4px;
-  }
+    height: 100vh;
+}
 
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  /*3333333*/
-
-  /*********************************/
-
-  .aTr{
-    margin-top: -80px;
+.areadois{
+    margin: auto;
+    border: 1px solid #444444;
+    width: 300px;
+    height: 380px;
+    border-radius: 7px;
     background: #ffffff;
-    padding: 5px;
-    border-radius: 4px;
+    box-shadow: 6px 6px 1px #1f263328;
+}
+
+.areadois h2{
     text-align: center;
-  }
-
-  .aTr button{
-    background: #7229d9;
-    font-family: 'Poppins', sans-serif 20pt;
+    background: #4774e6;
     color: #ffffff;
+    padding: 20px;
+    margin: 0;
+}
+
+.areatres{
+    border: 1px solid rgba(0, 0, 0, 0);
+    background: #ffffff;
+}
+
+.areatres p{
+    margin: 10px;
+    margin-bottom: -8px;
+    font-size: 15pt;
+}
+
+.areatres input{
+    width: 95%;
+    border: 1px solid #ffffff;
+    outline: 0;
+    font-size: 15pt;
+}
+
+.areatres > div{
+    border: 1px solid #444444;
+    margin: 10px;
+    border-radius: 7px;
+    padding: 2px;
+}
+
+.areatres button{
+    background: #4774e6;
+    color: #ffffff;
+    margin: auto;
+    font-size: 12pt;
+    border-radius: 7px;
+    border: none;
+    width: 100%;
     padding: 10px;
-    padding-left: 70px;
-    padding-right: 70px;
-    border: 1px solid #7229d9;
-    border-radius: 4px;
-  }
+}
 
-  .aTr button:hover{
-    box-shadow: 3px 3px 3px black;
-  }
+.btnT{
+    display: flex;
+    padding: 12px;
+    height: 100%;
+    border: nonee;
+}
 
-  /***************pop up******************/
+#btnG{
+    margin-top: 20px;
+    border: 1px solid rgba(255, 0, 0, 0);
+}
 
-  .telaUm{
+.arealink{
+    text-align: center;
+    border: 1px solid rgba(255, 0, 0, 0);
+}
+
+#arealinkg{
+    border: 1px solid rgba(255, 0, 0, 0);
+}
+
+.areatres a{
+   color: #4774e6;
+   text-decoration: none;
+}
+
+/* popup */
+
+.caixa{
     background-color: #ffffff10;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 10;
-    
-    display: none;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
+}
 
-  }
-
-  .telaDois{
-    width: 550px;
-    height: 350px;
+.caixadois{
     background: #ffffff;
-    border-radius: 4px;
-    padding: 15px;
-    border: 2px solid #0023336e;
-  }
-
-  .telaDois button{
-    background: #7229d9;
-    font-family: 'Poppins', sans-serif 20pt;
-    color: #ffffff;
-    padding: 10px;
-    padding-left: 70px;
-    padding-right: 70px;
-    border: 1px solid #7229d9;
-    border-radius: 4px;
-  }
-
-  .telaTres img{
-    width: 50px;
-  }
-
-  .telaTres{
-    text-align: center;
-  }
-
-  .telaTres h2{
-    margin-top: -10px;
-  }
-
-  .assUser{
-    text-align: left;
-    max-width: 350px;
-    margin: auto;
-    
-  }
-
-  .assUser input{
     width: 100%;
-    border: 2px solid #7229d9;
-    padding: 3px;
-    border-radius: 4px;
-  }
+    max-width: 300px;
+    margin: 20% auto;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    border: 1px solid #44444450;
+}
 
-  .fFecha{
-    text-align: right;
-  }
+.caixatres h3{
+    text-align: center;
+    margin-top: -5px;
+    color: #444444;
+}
 
-  .fFecha a{
-    text-decoration: none;
-  }
+.caixatres img{
+    width: 40px;
+}
 
-  /******************* Menu ********************/
+.caixatres{
+    text-align: center;
+}
 
-  /***************************************/
-  @media(max-width: 600px){
-    /*.swiper {
-      width: 200px;
-      height: 200px;
-      border-radius: 4px;
-    }*/
+.caixatres p{
+    font-size: 10pt;
+    text-align: left;
+    color: #444444;
+}
 
-   .conteiner{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: auto;
-      width: auto;
-      height: auto;
-      }
-
-    .item{
-        width: 100%;
-        height: 200px;
-        border-radius: 4px;
-        padding: 5px;
-        margin: 15px;
-    }
-
-    .telaDois{
-      margin: 50px;
-    }
-
-    .aTr{
-      margin-top: 10px;
-    }
-  }
+.btnT > button{
+    background: #4774e6;
+    border: 1px solid #4774e6;
+    font-size: 12pt;
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 5px;
+    width: 100%;
+    cursor: pointer;
+}
